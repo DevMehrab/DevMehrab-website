@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>DevMehrab | project page</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+  }
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.button{
+  height: 40px;
+  background: tomato;
+  border:none;
+  padding: 0 10px;
+}
+.dark{
+  background-color: #35424a;
+  color: white;
+  padding: 15px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+header {
+  background-color:#35424a;
+  padding:15px 0;
+  min-height: 70px;
+  border-bottom: 2px solid tomato;
+}
+header .container .logo{
+  float: left;
+  color: white;
+}
+header .container .logo span{
+  color: tomato;
+}
+header .container .navigation{
+  float: right;
+  margin-top: 10px;
+}
+header .container .navigation ul{
+  padding: 0;
+  margin: 0;
+}
+header .container .navigation ul li{
+  display: inline;
+  padding: 0 10px;
+}
+header .container .navigation ul li a{
+  text-decoration: none;
+  color:white;
+}
+header .container .navigation ul li a:hover{
+  color: lightgray;
+  font-weight: bold;
+}
+header .container .navigation ul li .current{
+  color: tomato;
+  font-weight: bold;
+}
+
+#subscribe {
+  padding: 20px;
+  color: white;
+  background-color: #35424a;
+  margin-bottom: 20px;
+}
+#subscribe h1{
+  float: left;
+  margin-top: 5px;
+}
+#subscribe form{
+  float: right;
+}
+#subscribe form input{
+  padding: 5px;
+  height: 40px;
+  width:250px;
+  border: none;
+  outline: none;
+}
+#project .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card{
+display:flex;
+text-align:center;
+padding:20px 15px 5px 15px;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+background:#35424a;
+width: 300px;
+border-radius:3px;
+margin: auto;
+margin: 15px;
+color: white;
+}
+i{
+  font-size: 80px;
+  margin: 20px;
+/*height:120px;
+background-size: cover;
+border-radius:50%;*/
+}
+.card-header  {
+font-weight:600;
+}
+.card-title{
+font-weight:500;
+}
+.card-description{
+font-weight:400;
+line-height:1.5rem;
+}
+#project .container .card a{
+text-decoration:none;
+color:lightblue;
+background-color:#343A40;
+border-radius:3px;
+width:100%;
+padding:10px;
+margin:10px 0;
+box-shadow: rgba(0, 0, 0, 0.20) 1px 1px 1px;
+}
+.card:hover{
+background:#08182F;
+cursor: pointer;
+transform:scale(1.03);
+transition: all 1s ease;
+color: #27DAC2;
+}
+footer{
+  background-color: #35424a;
+  color: white;
+  text-align: center;
+  height: 80px;
+  padding-top: 10px;
+  margin-top:20px;
+}
+</style>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1><span>Dev</span>Mehrab</h1>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li ><a href="Portfolio-website.html" >HOME</a></li>
+          <li><a href="Project.html" class="current">PROJECT</a></li>
+          <li><a href="Dev.html">DEV</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  
+  <section id="subscribe">
+    <div class="container">
+      <h1>subscribe to my newsletter</h1>
+      <form >
+        <input type="email" placeholder="Enter email...">
+        <button class="button" type="submit">subscribe</button>
+      </form>
+    </div>
+  </section>
+  
+  <section id="project">
+    <div class="container">
+      
+      <div class="card">
+        <!--<div class="image one"><img src="./img/mehrab.jpg"></img></div>-->
+        <i class="fas fa-portrait"></i>
+        <h3 class="card-header">Social media post</h3>
+        <p class="card-title">-novice-</p>
+        <p class="card-description">This is my first social media post design  </p><p>USED:- HTML & CSS</p>
+        <a href="jim.html">visit now</a>
+      </div>
+      <div class="card">
+        <!--<div class="image one"><img src="./img/mehrab.jpg"></img></div>-->
+        <i class="fas fa-bell"></i>
+        <h3 class="card-header">Notification bar</h3>
+        <p class="card-title">-novice-</p>
+        <p class="card-description">This is also my first notification bar design  </p><p>USED:- HTML & CSS</p>
+        <a href="Notification.html">visit now</a>
+      </div>
+      <div class="card">
+        <!--<div class="image one"><img src="./img/mehrab.jpg"></img></div>-->
+        <i class="fas fa-portrait"></i>
+        <h3 class="card-header">Social media post</h3>
+        <p class="card-title">-novice-</p>
+        <p class="card-description">This is my first social media post design  </p><p>USED:- HTML & CSS</p>
+        <a href="jim.html">visit now</a>
+      </div>
+      <div class="card">
+        <!--<div class="image one"><img src="./img/mehrab.jpg"></img></div>-->
+        <i class="fas fa-bell"></i>
+        <h3 class="card-header">Notification bar</h3>
+        <p class="card-title">-novice-</p>
+        <p class="card-description">This is also my first notification bar design  </p><p>USED:- HTML & CSS</p>
+        <a href="Notification.html">visit now</a>
+      </div>
+
+    </div>
+  </section>
+  
+  <footer>
+    <p>Mehrab hossain &copy; copyright 2021</p>
+  </footer>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
