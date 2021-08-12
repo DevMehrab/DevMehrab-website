@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        list-style: none;
+        text-decoration: none;
+        color: #31446c;
+    }
+
+    a {
+        color: #31446c;
+    }
+
+    nav {
+        height: 80px;
+        background-color: white;
+        border: 1px solid lightgray;
+    }
+
+    label.logo {
+        color: #31446c;
+        line-height: 80px;
+        font-size: 25px;
+        margin: 0 20px;
+        margin-left: 150px;
+        font-weight: 500;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 30px;
+        background-color: white;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        margin: 0 5px;
+        padding: 0 5px;
+    }
+
+    nav ul li:hover {
+        border-bottom: 1px solid #666af6;
+    }
+
+    nav ul li:hover a {
+        color: #666af6;
+    }
+
+    .check-button {
+        color: darkgrey;
+        font-size: 30px;
+        line-height: 80px;
+        float: right;
+        margin-right: 10px;
+        display: none;
+        cursor: pointer;
+    }
+
+    #check {
+        display: none;
+    }
+
+    @media (max-width:952px) {
+        label .logo {
+            font-size: 25px;
+            padding-left: 50px;
+        }
+
+        nav ul li a {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width:858px) {
+        .check-button {
+            display: block;
+        }
+
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: .5s;
+        }
+
+        nav ul li {
+            display: block;
+        }
+
+        nav ul li a {
+            font-size: 20px;
+        }
+
+        #check:checked~ul {
+            left: 0;
+        }
+    }
+
+    /*  */
+
+    .landing-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing-page .left-items {
+        line-height: 1.8rem;
+        margin-left: 150px;
+    }
+
+    .landing-page .left-items .text .sub-heading {
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .landing-page .left-items .text .title {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .button {
+        display: flex;
+    }
+
+    .button .reach-me button {
+        background-color: #666af6;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 2px;
+    }
+
+    .button .reach-me button:hover {
+        background-color: #353aef;
+    }
+
+    .right-items .image img {
+        width: 550px;
+        margin: 60px 100px;
+    }
+</style>
+
+<body>
+    <nav>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="check-button">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <label class="logo">MehraB</label>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">PROJECTS</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <div class="landing-page">
+        <div class="left-items">
+            <div class="text">
+                <h6 class="sub-heading">Hello there</h6>
+                <h2 class="heading"> I'm Mehrab Hossain </h2>
+                <h5 class="title">web developer </h5>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.Nostrum
+                    reprehenderit
+                    fugit
+                    eaque saepe officianon? amet consectetur</p>
+            </div>
+            <div class="button">
+                <div class="reach-me"><button>reach me</button></div>
+            </div>
+        </div>
+        <div class="right-items">
+            <div class="image"><img src="./img/illustration.png"></div>
+        </div>
+    </div>
+    <script>
+        let test = 0
+
+        for (let i = 0; i < 5; i++) {
+
+            console.log(i)
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
